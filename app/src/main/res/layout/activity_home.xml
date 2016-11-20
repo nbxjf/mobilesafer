@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.declan.mobilesafer.activity.HomeActivity">
+
+    <TextView
+        android:text="功能列表"
+        style="@style/TitleStyle" />
+    <!--android:ellipsize="end" 省略点的位置-->
+    <!--<TextView
+        android:textColor="#000"
+        android:text="夏天夏天悄悄过去，留下xiaomimi,啊啊啊啊啊啊啊啊啊啊啊,夏天夏天悄悄过去，留下xiaomimi"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <com.declan.mobilesafer.view.FocusTextView
+        android:textColor="#000"
+        android:text="啊，五环，你比四环多一环，啊，五环，你比六环少一环，啊，五环，你比四环多一环，啊，五环，你比六环少一环"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:numColumns="3"
+        android:verticalSpacing="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+</LinearLayout>
